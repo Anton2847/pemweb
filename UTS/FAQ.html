@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Seafood Pak Mahfud</title>
+    <link rel="stylesheet" href="resfaq.css">
+    <style>
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .faq-item h2 {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">Seafood Pak Mahfud</a>
+            <ul class="nav-links">
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Pemesanan</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="reservation.html">Reservasi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header">
+            <h1>Pertanyaan yang Sering Ditanyakan</h1>
+        </section>
+        <section class="content">
+            <div class="faq-item">
+                <h2 onclick="toggleAnswer('answer1')">Bisa kirim pesanan?</h2>
+                
+                <p id="answer1" style="display: none;">Pasti, kami bisa kirim pesanan ke wilayah sekitar restoran dalam jarak 10km.</p>
+            </div>
+            <div class="faq-item">
+                <h2 onclick="toggleAnswer('answer2')">Ada pilihan vegetarian?</h2>
+                <p id="answer2" style="display: none;">Tentu, ada beberapa menu vegetarian yang tersedia di sini.</p>
+            </div>
+            <div class="faq-item">
+                <h2 onclick="toggleAnswer('answer3')">Bisa reservasi online?</h2>   
+                <p id="answer3" style="display: none;">Iya, bisa langsung reservasi melalui halaman reservasi kami.</p>
+            </div>
+            <div class="faq-item">
+                <h2 onclick="toggleAnswer('answer4')">Apakah halal?</h2>
+                <p id="answer4" style="display: none;">Tentu saja, kami hanya mengambil bahan-bahan dari tempat yang sudah berlisensi halal MUI.</p>
+            </div>
+            <div class="faq-item">
+                <h2 onclick="toggleAnswer('answer5')">Apa metode pembayaran yang tersedia?</h2>
+                <p id="answer5" style="display: none;">Kami menerima pembayaran tunai dan kartu kredit/debit.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seafood Pak Mahfud. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
